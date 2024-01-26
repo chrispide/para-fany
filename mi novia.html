@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5e7ea;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #valentine-heart {
+            font-size: 40px;
+            color: red;
+        }
+        #love-message {
+            margin-top: 20px;
+            font-size: 20px;
+            display: none;
+        }
+        #mensajeDeAmor {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="valentine-heart">❤️</div>
+    <div id="love-message">En mi vida, siempre supe que faltaba algo.<br>Y entonces llegaste tú, llenando cada vacío <br>con tu amor y ternura. Eres la razón por <br>la que mi corazón late con alegría.<br>Gracias por ser la luz que ilumina mi mundo.<br>Te amo más de lo que las palabras pueden expresar.</div>
+    <button id="mensajeDeAmor">Mensaje de Amor</button>
+
+    <script>
+        document.getElementById('mensajeDeAmor').addEventListener('click', function() {
+            document.getElementById('love-message').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
